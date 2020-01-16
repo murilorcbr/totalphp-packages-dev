@@ -10,5 +10,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "TotalPHP\\MeetUp\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "~5|~6"
+    }
 }

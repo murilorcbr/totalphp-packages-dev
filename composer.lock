@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6f64f68dce1e2c9171fbf43fb206d9d",
+    "content-hash": "f185c4eb7d02a0a3ca022aaf5de10be9",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3005,13 +3005,20 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/TotalPHP/MeetUp",
-                "reference": "833dc865e8eed32e10c6504af88d042d55ec7d25",
+                "reference": "676bc74be83d51a2753b912405aa937b748df061",
                 "shasum": null
             },
             "require": {
                 "illuminate/support": "~5|~6"
             },
             "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TotalPHP\\MeetUp\\MeetUpServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "TotalPHP\\MeetUp\\": "src/"
@@ -3026,7 +3033,10 @@
                     "email": "murilorcbr@gmail.com"
                 }
             ],
-            "description": "Pacote de demonstração de construção de um pacote Laravel"
+            "description": "Pacote de demonstração de construção de um pacote Laravel",
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "vlucas/phpdotenv",

@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bb4dacacf43532a01bf1d3d6dd3bbe1",
+    "content-hash": "b6f64f68dce1e2c9171fbf43fb206d9d",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3000,6 +3000,35 @@
             "time": "2019-10-24T08:53:34+00:00"
         },
         {
+            "name": "total-php/meet-up",
+            "version": "9999999-dev",
+            "dist": {
+                "type": "path",
+                "url": "./packages/TotalPHP/MeetUp",
+                "reference": "833dc865e8eed32e10c6504af88d042d55ec7d25",
+                "shasum": null
+            },
+            "require": {
+                "illuminate/support": "~5|~6"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "TotalPHP\\MeetUp\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Murilo Santos",
+                    "email": "murilorcbr@gmail.com"
+                }
+            ],
+            "description": "Pacote de demonstração de construção de um pacote Laravel"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v3.6.0",
             "source": {
@@ -5044,7 +5073,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "total-php/meet-up": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

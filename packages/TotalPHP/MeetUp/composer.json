@@ -1,0 +1,14 @@
+{
+    "name": "total-php/meet-up",
+    "description": "Pacote de demonstração de construção de um pacote Laravel",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Murilo Santos",
+            "email": "murilorcbr@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

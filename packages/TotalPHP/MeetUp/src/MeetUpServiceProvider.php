@@ -19,6 +19,8 @@ class MeetUpServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/meetup.php' => config_path('meetup.php'),
             ]
         );
+
+        $this->loadMigrationsFrom(__DIR__ . '/Models/Migrations');
     }
 
     public function register()

@@ -3005,10 +3005,11 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/TotalPHP/MeetUp",
-                "reference": "676bc74be83d51a2753b912405aa937b748df061",
+                "reference": "6a53cd19b84a0a4c86fb2172acf60e44aad5a7ab",
                 "shasum": null
             },
             "require": {
+                "illuminate/database": "~5|~6",
                 "illuminate/support": "~5|~6"
             },
             "type": "project",

@@ -21,6 +21,8 @@ class MeetUpServiceProvider extends ServiceProvider
         );
 
         $this->loadMigrationsFrom(__DIR__ . '/Models/Migrations');
+
+        $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
     }
 
     public function register()

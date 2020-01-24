@@ -17,4 +17,9 @@ class Participant extends Model
         'name',
         'document',
     ];
+
+    public function meetups()
+    {
+        return $this->belongsToMany(Meetup::class);
+    }
 }

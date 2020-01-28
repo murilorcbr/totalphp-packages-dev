@@ -3,6 +3,7 @@
 namespace TotalPHP\MeetUp;
 
 use Illuminate\Support\ServiceProvider;
+use TotalPHP\MeetUp\Console\Commands\GenerateServiceCommand;
 
 /**
  * Class MeetUpServiceProvider
@@ -23,6 +24,12 @@ class MeetUpServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/Models/Migrations');
 
         $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                GenerateServiceCommand::class,
+            ]);
+        }
     }
 
     public function register()

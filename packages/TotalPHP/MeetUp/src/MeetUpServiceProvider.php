@@ -5,6 +5,7 @@ namespace TotalPHP\MeetUp;
 use Illuminate\Support\ServiceProvider;
 use TotalPHP\MeetUp\Console\Commands\GenerateServiceCommand;
 use TotalPHP\MeetUp\Console\Commands\GenerateServiceInterfaceCommand;
+use TotalPHP\MeetUp\Http\Middleware\AjaxOnlyMiddleware;
 
 /**
  * Class MeetUpServiceProvider
@@ -40,5 +41,11 @@ class MeetUpServiceProvider extends ServiceProvider
             __DIR__ . '/../config/meetup.php',
             'meetup'
         );
+
+        // Forma de registro de middleware
+        /** @var \Illuminate\Routing\Router $router */
+        $router = $this->app['router'];
+
+        $router->aliasMiddleware('onlyAjax', AjaxOnlyMiddleware::class);
     }
 }

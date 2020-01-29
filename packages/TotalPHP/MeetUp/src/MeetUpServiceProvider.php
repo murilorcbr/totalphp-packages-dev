@@ -4,6 +4,7 @@ namespace TotalPHP\MeetUp;
 
 use Illuminate\Support\ServiceProvider;
 use TotalPHP\MeetUp\Console\Commands\GenerateServiceCommand;
+use TotalPHP\MeetUp\Console\Commands\GenerateServiceInterfaceCommand;
 
 /**
  * Class MeetUpServiceProvider
@@ -28,6 +29,7 @@ class MeetUpServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 GenerateServiceCommand::class,
+                GenerateServiceInterfaceCommand::class,
             ]);
         }
     }

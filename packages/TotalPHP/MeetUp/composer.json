@@ -1,5 +1,6 @@
 {
     "name": "total-php/meet-up",
+    "version": "1.0.0",
     "description": "Pacote de demonstração de construção de um pacote Laravel",
     "type": "project",
     "license": "MIT",
